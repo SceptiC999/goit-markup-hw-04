@@ -1,0 +1,195 @@
+:root {
+--primary-bg-color: #FFFFFF;
+--secondary-bg-color: #F5F5F5;
+--thirdy-bg-color: #F5F4FA;
+--accent-bg-color:#2F303A;
+--primary-text-color:#000000 ;
+--secondary-text-color: #212121;
+--thirdy-text-color:#757575;
+--accent-text-color:#2196F3;
+--white-transparency:color: rgb(255,255,255,0.6);
+--white-color:#fff;
+--line-color: #ececec;
+}
+
+
+/* Основний колір тексту #000000 */
+
+/* Другорядний колір тексту #212121 */
+
+/* Акцентивний колір тексту #2196F3 */
+
+/* Третьорядний колір тексту #757575 */
+
+/* Білий з прозорістю 60% #000000 */
+
+/* Колір фону основний білий #FFFFFF */
+
+/* Колір фону другорядний білий #F5F5F5 */
+
+/* Колір фону третьорядний білий ##F5F4FA */
+
+/* Колір фону кольоровий #2F303A */
+
+/* Колір лінії хедеру #ECECEC */
+
+.body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* header */
+.nav {
+    color: var(--secondary-text-color);
+}
+
+.header-list link {
+color: var(--secondary-text-color);
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
+color:var(--accent-text-color);
+}
+
+.logo {
+color:var(--primary-text-color);
+}
+
+.logo-main {
+color:var(--accent-text-color);
+}
+
+.header-site{
+color:var(--accent-text-color);
+}
+
+.header-telephone{
+color: var(--thirdy-text-color);
+}
+
+/* main */
+/* General */
+
+.general {
+    color:var(--primary-text-color);
+}
+
+.general-title {
+    color:var(--white-color);
+}
+
+.general-button {
+    color:var(--white-color);
+}
+
+/* Features */
+
+.features {
+
+}
+
+.features-title {
+
+}
+
+.featues-list {
+
+}
+
+.features-list-item {
+
+}
+
+.features-list-title {
+color:var(--secondary-text-color);
+}
+
+.features-list-text {
+color:var(--thirdy-text-color);
+}
+
+/* Сфери зайнятості */
+
+.field-employment {
+
+}
+
+.field-employment-title {
+color:var(--secondary-text-color);
+}
+
+.field-employment-list {
+
+}
+
+.field-employment-item {
+
+}
+
+.field-employment-link {
+
+}
+
+/* Komanda */
+
+.team {
+
+}
+
+.team-title {
+color:var(--secondary-text-color);
+}
+
+.team-list {
+
+}
+
+.team-item {
+
+}
+
+.team-text {
+color:var(--thirdy-text-color);
+}
+
+/* Футер */
+
+.footer {
+
+}
+.footer-logo-main {
+color:var(--white-color);
+}
+
+.footer-logo {
+color:var(--accent-text-color);
+}
+
+.footer-block {
+
+}
+
+.footer-address {
+color:var(--white-color);
+}
+
+.footer-link {
+color:var(--white-transparency);
+}
+
+.footer-telephone {
+color:var(--white-transparency);
+}
+
+
+
+
+
+
+
+
