@@ -61,7 +61,7 @@
     color: var(--accent-text-color);
 }
 
-.header-list .link.current {
+.header-list .current {
     color: var(--accent-text-color)
 }
 
@@ -89,7 +89,17 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: var(--secondary-text-color);
 }
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active
+{
+    color: var(--accent-text-color);
+}
+
+
 
 .header-seclist {}
 
@@ -345,12 +355,6 @@
     letter-spacing: 0.06em;
 }
 
-.portfolio-title:hover,
-.portfolio-title:focus,
-.portfolio-title:active {
-    color: var(--accent-text-color);
-}
-
 .portfolio-text {
     color: var(--secondary-text-color);
     text-decoration: none;
@@ -358,12 +362,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-}
-
-.portfolio-text:hover,
-.portfolio-text:focus,
-.portfolio-text:active {
-    color: var(--accent-text-color);
 }
 
 .portfolio {
