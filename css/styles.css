@@ -65,8 +65,8 @@
     color: var(--accent-text-color)
 }
 
-.logo {
-    color: var(--primary-text-color);
+.logo-main {
+    color: var(--accent-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -74,8 +74,8 @@
     text-decoration: none;
 }
 
-.logo-main {
-    color: var(--accent-text-color);
+.logo {
+    color: var(--primary-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -94,8 +94,7 @@
 
 .header-link:hover,
 .header-link:focus,
-.header-link:active
-{
+.header-link:active {
     color: var(--accent-text-color);
 }
 
@@ -327,7 +326,7 @@
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .portfolio-button:hover,
@@ -356,7 +355,7 @@
 }
 
 .portfolio-text {
-    color: var(--secondary-text-color);
+    color: var(--thirdy-text-color);
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
