@@ -12,6 +12,7 @@
     --line-color: #ececec;
     --border-color: #eee;
     --border-dec-color: #AFB1B8;
+    --hero-bg-color: #c4c4c4;
 }
 
 
@@ -37,6 +38,11 @@
 
 /* Studio CSS */
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0
+}
+
+
 .list {
     list-style: none;
     margin: 0px;
@@ -57,9 +63,7 @@
     padding-bottom: 94px;
 }
 
-.section-employment, .section-clients {
-    padding-top: 0px;
-}
+.section-employment, .section-clients {}
 
 .body {
     background-color: var(--primary-bg-color);
@@ -214,14 +218,14 @@
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--thirdy-text-color)
+    fill: currentColor;
 }
 
 .header-icon-telephone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: var(--thirdy-text-color)
+    fill: currentColor;
 }
 
 .header-icon:hover,
@@ -245,15 +249,15 @@
     margin-right: auto;
     max-width: 1600px;
     height: 600px;
-    background-color: #C4C4C4;
+    background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image:
-        /* linear-gradient(to right,
-            rgba(47, 48, 58, 0.4)), */
-            url("../img/mainimg.jpg");
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../img/mainimg.jpg");
 }
 
 .general-title {
@@ -301,7 +305,6 @@
 .features-list-item {
     width: 270px;
     margin-right: 30px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .features-list-item:last-child {
@@ -363,13 +366,9 @@
     justify-content: space-between;
 }
 
-.field-employment-item {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+.field-employment-item {}
 
-.field-employment-link {
-    
-}
+.field-employment-link {}
 
 /* Komanda */
 
@@ -415,6 +414,8 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-text {
@@ -423,6 +424,7 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .icon-list {
@@ -436,10 +438,7 @@
 
 .icon-list-item {
     display: flex;
-    width: 44px;
-    height: 44px;
     fill: var(--white-color);
-    border-radius: 50%;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
@@ -452,10 +451,13 @@
 
 .team-icon-link {
     display: flex;
+    width: 44px;
+    height: 44px;
     fill: var(--white-color);
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    color: var(--border-dec-color);
 
 }
 
@@ -464,20 +466,16 @@
 }
 
 
-.icon-list-item:hover,
-.icon-list-item:active {
-    background-color: var(--accent-text-color);
+.team-icon-link:hover,
+.team-icon-link:active {
     color: var(--white-color);
+    background-color: var(--accent-text-color);
 }
 
-.team-icon:hover,
-.team-icon:active {
-    fill: var(--white-color);
-}
 
 .team-icon {
     display: block;
-    fill: var(--border-dec-color);
+    fill: currentColor;
     width: 20px;
     height: 20px;
 }
@@ -499,11 +497,6 @@
 .clients-list-item {
     width: 170px;
     height: 92px;
-    border: 1px solid var(--border-dec-color);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .clients-list-item:not(:last-child) {
@@ -512,22 +505,28 @@
 
 .clients-link {
     display: flex;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    fill: var(--border-dec-color)
+    fill: var(--border-dec-color);
+    border: 1px solid var(--border-dec-color);
+    border-radius: 4px;
+    color: var(--border-dec-color)
 }
+
+.clients-link:hover,
+.clients-link:active {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+    color: var(--accent-text-color);
+}
+
 
 .clients-icon {
     width: 106px;
     height: 60px;
-}
-
-
-.clients-icon:hover,
-.clients-icon:active {
-    fill: var(--accent-text-color)
+    fill: currentColor;
 }
 
 /* Футер */
@@ -541,6 +540,7 @@
 
 .footer-sec {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo-main {
@@ -618,9 +618,9 @@
 
 .footer-invitation {
     display: block;
-    width: 206px;
+
     margin-left: 70px;
-    margin-top: 12px;
+
 }
 
 
@@ -718,7 +718,7 @@
 .portfolio-item {
     margin-bottom: 30px;
     margin-right: 30px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
 }
 
 .portfolio-item:nth-child(3n) {
@@ -731,9 +731,14 @@
 
 .portfolio-link {
     text-decoration: none;
-    margin-bottom: 20px;
-    border-bottom: var(--border-color);
+    display: block;
 }
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 
 .portfolio-title {
     color: var(--secondary-text-color);
